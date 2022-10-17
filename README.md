@@ -1,1 +1,1 @@
-Escrevemdo código fonte
+Escrevendo código fonte
