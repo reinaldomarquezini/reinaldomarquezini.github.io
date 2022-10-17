@@ -1,0 +1,132 @@
+*{
+margin: 0; /*Espaço margem*/
+padding: 0; /*Preenchimento dos cantos*/
+}
+h1{
+color: blue;
+}
+h2{
+color: blue;
+}
+body{
+background: rgb(221, 207, 207); /*Cor fundo*/
+font: normal 15pt Arial; /*Tipo Fonte*/
+}
+/*Cabeçalho, Titulo*/
+section{
+text-align: center; /*Centralizar no meio da tela*/
+}
+/*Classe Menu*/
+.menu{
+width: 100%; /*Largura*/
+height: 50px; /*Altura*/
+background-color: #222; /*Cor de fundo*/
+font-family: 'Arial'; /*Tipo de fonte*/
+position: fixed; /*Fixando menu, mesmo 
+se rolar a tela ele nao sai*/
+}
+.menu ul{
+list-style: none;
+position: relative;
+}
+/*Para cada item de nossas listas*/
+.menu ul li{
+width: 150px; /*Largura*/
+float: left; /*Flutuação para esquerda*/
+}
+/*Links*/
+.menu a{
+padding: 15px; /*preenchimento dos cantos*/
+display: block;
+text-decoration: none;
+text-align: center;
+background-color: #222; /*Cor de fundo*/
+color: white; /*Cor da fonte*/
+}
+.menu ul ul{
+position: absolute; /*Posição absolute*/
+visibility: hidden;
+}
+/*Passando o mouse e aparecendo os itens sub.Itens*/
+.menu ul li:hover ul{
+    visibility: visible;
+}
+/*Cor fundo do item, após passado o mouse*/
+.menu a:hover{
+background-color: #e0d7d7; /*Cor de fundo*/
+color: #555; /*Cor da fonte*/ 
+}
+.menu ul ul li{
+float: none;
+border-bottom: solid 1px #ccc;
+}
+.menu ul ul li a{
+background-color: solid 1px #ccc; /*Cor Sub.Item*/
+}
+label[for="bt_menu"]{
+padding: 5px; /*Preenchimento dos cantos*/
+background-color: #222; /*Cor de fundo*/
+color: white; /*Cor da fonte*/
+font-family: Arial; /*Tipo da fonte*/
+text-align: center; /*Alinhamento centralizado*/
+font-size: 30px; /*Tamanho da fonte*/
+cursor: pointer; /*Usado quando o cursor, tem uma 
+mao*/
+width: 50px;/*Largura*/
+height: 50px; /*Altura*/
+position: fixed; /*Fixando menu, mesmo se rolar 
+a tela ele não sai*/
+}
+/*Deixando chekbox, invisivel*/
+#bt_menu{
+display: none; /*Ocultar*/
+}
+/*Deixando bt_menu oculto*/
+label[for="bt_menu"]{
+display: none;
+}
+/*Criando o comportamento da 
+tela, quando ficar dimensão menor*/
+@media(max-width: 800px){
+label[for="bt_menu"]{
+display: block; /*Quando a tela tiver 
+menor, menu vai aparecer*/
+}
+#bt_menu:checked ~ .menu {
+margin-left: 0; /*Clicando a verificando o menu*/
+}
+.menu{
+margin-top: 70px; /*Margem do topo*/
+margin-left: -100%; /*Margem, quando diminuir fechar*/
+transition: all .4s; /*Tempo para verificar 
+os sub.Itens*/
+}
+/*Invertendo o menu, horizontal para vertical*/
+.menu ul li{
+width: 100%; /*Largura*/
+float: none;
+}
+.menu ul ul{
+position: static;
+overflow: hidden;
+max-height: 0; /*Maxima altura*/
+transition: all .4s; /*Tempo após passado o mouse*/
+}
+/*Aparecendo os sub.Item, quando passo o mouse*/
+.menu ul li:hover ul{
+height: auto; /*Altura*/
+max-height: 200px; /*Para um menu com mais item, 
+alterar o valor*/
+}
+}
+/*Rodapé*/
+footer{
+color: blue; /*Cor da fonte*/
+text-align: center; /*Centralizar no meio da
+tela, o rodapé*/
+font-style: italic; /*Estilo da fonte*/
+}
+section{
+color: black; /*Cor da fonte*/
+font-size: 25px; /*Tamanho da fonte*/
+}
