@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="page.css">
+    <title>Acessibilidade na Real</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+</head>
+
+<body style="background-color : #ffffff;">
     <header>
         <nav>
             <ul>
-                <li class="logo" ><a href="">Logo</a><li>
+                <li clss="logo" ><a href="">LOGO</a><li>
                 <li><a href="" style="color: black;">Quem somos</a></li>
                 <li><a href="" style="color: black;">Conheça seus direitos</a></li>
                 <li><a href="" style="color: black;">Dúvidas</a></li>
@@ -17,19 +21,59 @@
             <hr>
         </nav>
     </header>
-    header{
-    padding-top:0.1%;
-    background-color: #fca17d;
-}
+    <h2>Crie sua conta</h2>
+    <form>
+        
+        <fieldset>
+        <legend>Dados da conta</legend>
+              <label for="fname">Nome:</label><br>
+              <input type="text" id="fname" name="fname"><br>
+              <br>
+      
+              <label for="lname">Sobrenome:</label><br>
+              <input type="text" id="lname" name="lname"><br>
+              <br>
+        </fieldset>
+        <br>
+        <fieldset>
+        <legend>Endereço</legend>
+              <label for="street">Rua:</label><br>
+              <input type="text" id="street" name="street"><br>
+              <br>
+                    
+              <label for="city">Cidade:</label><br>
+              <input type="text" id="city" name="city"><br>
+              <br>
+            
+              <label for="state">Estado:</label> <select id="state" name="state">
+                   <option value="MG" selected>MG</option>
+                  <option value="RJ">RJ</option>
+                <option value="SP">SP</option>
+                
+              </select><br>  
+            <br>
+    
+      </fieldset>
+      <br>
+      
+      <fieldset>
+      <legend>Dados de login</legend>
+      <label for="email">Email:</label><br>
+      <input type="text" id="email" name="email"><br>
+      <br>
+      
+        <label for="password">Senha:</label><br>
+        <input type="password" placeholder="Escolha uma senha" id="password" required><br>
+        <br>
+        <input type="password" placeholder="Repita a senha" id="confirm_password" required>
+    </fieldset>
+    <br>
+    <button type="button" onclick="alert('Sua conta foi criada com sucesso!')">Criar conta</button>
 
-ul{
-    padding: 0;
-    font-family: 'Din Next',sans-serif;
-    font-weight: bold;
-}
-ul li{
-    display: inline-block;
-    margin-right: 10px;
-    text-align: right;
-    color: black;
-}
+    </form><br>
+    <br>
+    
+    
+    
+</body>
+</html>
