@@ -1,0 +1,69 @@
+body {
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header{
+    padding-top:0.1%;
+    background-color: #ffffff;
+}
+a{
+    display: block;
+}
+
+a:link{
+    text-decoration: none;
+}
+ul{
+    padding: 0;
+    font-weight: bold;
+}
+ul li{
+    display: inline-block;
+    margin-right: 10px;
+    text-align: right;
+    color: black;
+}
+h2 {text-align: center; 
+    color: #da627d;  
+    font-size:30px 
+}
+form {
+    /* Apenas para centralizar o form na página */
+    margin: 0 auto;
+    width: 400px;
+    /* Para ver as bordas do formulário */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+form div + div {
+    margin-top: 1em;
+}
+label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: 55px;
+    text-align: left;
+}
+input, textarea {
+    
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid #999;
+}
+input:focus, textarea:focus {
+    /* Dar um pouco de destaque nos elementos ativos */
+    border-color: #0d0628;
+}
+.button{
+    display: block;
+    margin: 0 auto;
+    background-color: #9A348e;
+    color: white;
+    padding: 2px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
