@@ -14,9 +14,9 @@ header {
 
 .logo {
     margin-left: 5px;
-    font-weight: bold;
-    border-radius: 12%;
+     border-radius: 12%;
     text-align: center;
+    background-color: D58BDD;
 }
 
 a {
@@ -46,13 +46,7 @@ ul li {
 
 }
 
-.logo{
-    margin-left: 5px;
-    font-weight: bold;
-    padding: 1px 8px 1px 8px;
-    border-radius: 12%;
-    background-color: #da627d;
-}
+
 
 a{
     display: block;
@@ -68,14 +62,21 @@ a:link{
   float: left;
   width: 10%;
   padding: 110px;
+  text-align: center;
 }
    /* Clear floats after the columns */
     .row:after {
   content: "";
   display: table;
   clear: both;
+ 
 
-  
+  .logo {
+    margin-left: 5px;
+     border-radius: 12%;
+    text-align: center;
+    
+}
 
 
 }
