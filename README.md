@@ -1,4 +1,4 @@
-Essa é a página denominada "Home". Busca atender aos requisitos abaixo.
+Essa é a página denominada "Home". Busca atender aos requisitos funcionais abaixo.
 
 RNF02
 A aplicação deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge) - prioridade (Alta)
