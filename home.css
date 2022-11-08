@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+header{
+  align-items: baseline;
+  width: 100%;
+  padding-top:0.1%;
+  font-family: 'Adamina';
+  font-weight: bolder;
+}
+
+.logo{
+    margin-left: 5px;
+    text-align: center;
+}
+
+
+.topnav {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+
+.topnav > li {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid black;
+  border-radius: 12px;
+  margin: 0 100px;
+}
+
+a{
+  color: black;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #fca17d;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1441px){
+  .topnav > li{
+      margin: 0 50px;
+  }
+}
+
+@media screen and (max-width: 1045px){
+  .topnav > li{
+      margin: 0 20px;
+  }
+}
+  
+
+
+@media screen and (max-width: 600px) {
+  /* como centralizar, flexionar e deixar os itens do .header da mesma largura */
+  .topnav{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .topnav > li {
+      display: block;
+      margin: 0;
+
+  }
+
+  p}
+  
+  p{
+  text-align: center;
+  }
+
+
+
+
+
+    /* Create four equal columns that floats next to each other */
+    .column {
+  float: left;
+  width: 10%;
+  padding: 110px;
+  text-align: center;
+}
+   /* Clear floats after the columns */
+    .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo {
+    margin-left: 5px;
+     border-radius: 12%;
+    text-align: center;
+    
+}
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
